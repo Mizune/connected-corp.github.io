@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>メンテナンス中</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen p-6">
+
+    <div class="bg-white shadow-lg rounded-lg p-8 md:p-12 max-w-lg w-full text-center">
+
+        <div class="mb-8">
+            <img class="w-100 h-100 mx-auto text-indigo-600" src="connected_logo.svg"/>
+        </div>
+
+        <h1 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+            現在メンテナンス中です
+        </h1>
+
+        <p class="text-gray-600 text-base md:text-lg mb-8">
+            ご迷惑をおかけし、誠に申し訳ございません。<br>
+            サービスの開始まで今しばらくお待ちください。
+        </p>
+
+        <footer class="mt-12 text-xs text-gray-400">
+            &copy; <span id="currentYear"></span> Connected Corporation. All Rights Reserved.
+        </footer>
+
+    </div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
